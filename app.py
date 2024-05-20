@@ -24,6 +24,10 @@ with app.app_context():
     # Execute db.create_all() within the application context
     db.create_all()
 
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
+
 
 @app.route('/' , methods=['GET', 'POST'])
 def hello_world():
